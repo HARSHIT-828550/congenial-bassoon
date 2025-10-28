@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="titleDesc">
+  <title id="titleDesc">Harshit Rajput Developer Logo</title>
+
+  <defs>
+    <!-- Multi-color gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>    <!-- Purple -->
+      <stop offset="25%" stop-color="#3b82f6"/>   <!-- Blue -->
+      <stop offset="60%" stop-color="#06b6d4"/>   <!-- Cyan -->
+      <stop offset="100%" stop-color="#ec4899"/>  <!-- Pink -->
+    </linearGradient>
+
+    <!-- Gradient for HR text -->
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fff"/>
+      <stop offset="50%" stop-color="#e0f2fe"/>
+      <stop offset="100%" stop-color="#bae6fd"/>
+    </linearGradient>
+
+    <!-- Glow filter -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="15" flood-color="#60a5fa" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background Circle -->
+  <circle cx="128" cy="128" r="110" fill="url(#bgGradient)" filter="url(#shadow)" />
+
+  <!-- Outer Glow Ring -->
+  <circle cx="128" cy="128" r="118" stroke="url(#bgGradient)" stroke-width="6" fill="none" opacity="0.4" />
+
+  <!-- Stylized Head -->
+  <circle cx="128" cy="92" r="30" fill="#fff" fill-opacity="0.95" />
+  <rect x="70" y="140" width="116" height="48" rx="8" fill="#fff" fill-opacity="0.96" />
+  <rect x="84" y="150" width="88" height="28" rx="4" fill="url(#bgGradient)" opacity="0.25" />
+  <rect x="92" y="158" width="72" height="12" rx="3" fill="#fff" fill-opacity="0.7" />
+
+  <!-- Initials -->
+  <text x="128" y="190" text-anchor="middle" font-family="Poppins, Segoe UI, sans-serif" font-weight="700" font-size="42" fill="url(#textGradient)" filter="url(#shadow)">
+    HR
+  </text>
+
+  <!-- Decorative Developer Symbol (code line) -->
+  <g transform="translate(182,48) rotate(25)">
+    <rect x="-6" y="-6" width="30" height="12" rx="2" fill="url(#bgGradient)" opacity="0.4" />
+    <rect x="-2" y="-4" width="22" height="6" rx="1" fill="#fff" opacity="0.3" />
+  </g>
+</svg>
